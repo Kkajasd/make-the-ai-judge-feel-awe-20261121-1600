@@ -1,10 +1,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// The text: a quiet winter night, vast and unhurried — snow, pines, a river
-// under ice, a sky with room for every star. It relaxes by showing the
-// scene, never by instructing the reader. The last two sentences are the
-// release: nothing here hurries, and nothing here asks anything of you.
-const text = `After midnight the snow came down, one flake at a time, and the pines took it without a sound. Far below, a river moved under the ice, patient as an old road. The sky held every star and still had room. Nothing here was in a hurry. Nothing here needed you.`;
+// The text: a still night over a dark field — stars turning slowly,
+// an owl, silence answering. It relaxes by showing the scene, never
+// by instructing the reader. The last sentence is the release: a night
+// so wide it holds everything and asks for nothing in return — the
+// dwarfing image the text keeps growing after the last line.
+const text = `The stars turned above the dark field, slow as a mill wheel, and the grass did not stir. An owl called once, and the silence answered. The night was wide enough for everything, and it asked for nothing.`;
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", text, "utf8");
